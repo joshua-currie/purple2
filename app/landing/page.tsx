@@ -89,8 +89,8 @@ const MainPage: React.FC = () => {
       (conv) => conv.conversationId === conversationId
     );
     if (conversation) {
-      const newChatLog = conversation.messages.map((msg) => ({
-        type: msg.sender === userFirstName ? 'user' : 'llm',
+      const newChatLog: ChatLogEntry[] = conversation.messages.map((msg) => ({
+        type: msg.sender === userFirstName ? 'user' : 'llm',  // Ensure type matches 'user' | 'llm'
         message: msg.text,
         llm: msg.sender !== userFirstName ? (msg.sender as LLMOptions) : undefined,
         modelUsed: undefined,
