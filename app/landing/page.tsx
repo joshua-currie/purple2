@@ -350,8 +350,9 @@ const MainPage: React.FC = () => {
           </div>
 
           <p className="text-xs text-center p-2 roboto text-white">
-            AI isn't always correct. Please check for mistakes.
+            AI isn&apos;t always correct. Please check for mistakes.
           </p>
+
 
           <div className="flex justify-center relative">
             <input
