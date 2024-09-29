@@ -2,7 +2,6 @@
 
 import dbConnect from '../../../lib/mongodb';
 import { getUserFromSession } from '../../../lib/getUserFromSession';
-import User from '../../../models/User';
 import mongoose from 'mongoose';
 
 export default async function handler(req, res) {

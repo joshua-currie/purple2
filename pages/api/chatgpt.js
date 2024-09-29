@@ -2,7 +2,6 @@
 
 import dbConnect from '../../lib/mongodb';
 import { getUserFromSession } from '../../lib/getUserFromSession';
-import User from '../../models/User';
 import { getChatGPTResponse } from '../../lib/llm/chatgpt';
 
 export default async function handler(req, res) {
